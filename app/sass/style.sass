@@ -1,0 +1,141 @@
+@import '_fonts.sass'
+@import '_variables.sass'
+@import '_settings.sass'
+
+/*===== main styles =====*/
+
+a
+  text-decoration: none
+  transition: .3s
+
+.container
+  max-width: 1110px
+  margin: 0 auto
+
+.border_top
+  background: url('../img/border.png')
+  background-repeat: repeat-x
+
+.title_section
+  text-align: center
+  text-transform: uppercase
+  color: $col-title-section
+  font-family: $font-pt-sans-bold
+  font-size: 28px
+  &:after
+    content: ''
+    display: block
+    margin: 23px auto 0 auto
+    background-image: url('../img/section_before_header.svg')
+    background-repeat: no-repeat
+    width: 32px
+    height: 4px
+
+/*===== header =====*/
+
+.header_top
+  height: 115px
+
+.header_menu
+  padding: 32px 0 21px 0
+  text-align: center
+  &__item
+    text-transform: uppercase
+    color: $col-header-menu
+    font-size: 14px
+    font-family: $font-pt-sans-bold
+    margin-right: 44px
+    &:last-child
+      margin-right: 0
+    &:hover
+      color: $col-header-menu--active
+  &__item--active
+    color: $col-header-menu--active
+
+/*===== inform =====*/
+
+.inform
+  text-align: center
+  height: 570px
+  background: url('../img/info_bg.jpg')
+  background-size: cover
+  background-position: center -250px
+  font-family: $font-tnr
+  &__dark
+    background-color: rgba(0,0,0,.6)
+    height: 100%
+  &__title
+    text-transform: uppercase
+    font-size: 48px
+    font-weight: 400
+    color: $col-inform-title
+    padding: 165px 0 25px 0
+  &__descr
+    color: $col-inform-descr
+    line-height: 24px
+  &__btn_contr
+    margin-top: 43px
+  &__more_inf
+    display: inline-block
+    line-height: 46px
+    text-transform: uppercase
+    color: $col-inform-more-btn-txt
+    padding: 0 60px 0 34px
+    margin-right: 15px
+    font-family: $font-pt-sans-bold
+    border: 2px solid $col-inform-more-btn
+    background: url('../img/inform_more_btn.svg')
+    background-size: 12px 11px
+    background-repeat: no-repeat
+    background-position: 126px center
+    border-radius: 2px
+    font-size: 14px
+    &:hover
+      border: 2px solid lighten($col-inform-more-btn, 25%)
+      background-position: 130px center
+  &__dealer
+    display: inline-block
+    line-height: 50px
+    font-size: 14px
+    padding: 0 30px 0 30px
+    margin-left: 15px
+    text-transform: uppercase
+    border-radius: 2px
+    font-family: $font-pt-sans-bold
+    color: $col-inform-dealer-btn-txt
+    background-color: $col-inform-dealer-btn
+    &:hover
+      background-color: lighten($col-inform-dealer-btn, 10%)
+
+/*===== news =====*/
+
+.news
+  &__title
+    padding-top: 84px
+
+/*===== chose_city =====*/
+
+.chose_city
+  text-align: center
+  height: 300px
+  position: relative
+  &__title
+    text-transform: uppercase
+    font-size: 26px
+    font-family: $font-roboto-bold
+    color: $col-chose-city-title
+  &__btn
+    background-color: $col-chose-city-btn
+    display: inline-block
+    line-height: 50px
+    color: $col-chose-city-btn-txt
+    font-family: $font-pt-sans-bold
+    font-size: 14px
+    padding: 0 45px
+    border-radius: 2px
+    &:hover
+      background-color: lighten($col-chose-city-btn, 10%)
+  &__map
+    position: absolute
+    width: 100%
+    height: 100%
