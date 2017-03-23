@@ -113,6 +113,75 @@ a
   &__title
     padding-top: 84px
 
+.news_menu
+  text-align: center
+  font-family: $font-pt-sans-reg
+  margin: 42px 0 37px 0
+  &__item
+    color: $col-news-menu-item
+    text-transform: uppercase
+    font-size: 13px
+    margin-right: 40px
+    &:last-child
+      margin-right: 0
+    &:hover
+      color: $col-news-menu-hover
+  &__item--active
+    color: $col-news-menu-hover
+
+.news_articles
+  display: flex
+  justify-content: space-between
+  margin-bottom: 119px
+  &__article
+    width: 350px
+    text-align: center
+    padding-bottom: 23px
+    transition: .3s
+    &:hover
+      box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.15)
+  &__content
+    padding: 0 10px
+  &__img
+    width: 100%
+    height: 210px
+  &__title
+    font-size: 15px
+    font-family: $font-pt-sans-bold
+    padding: 13px 0 18px 0
+    text-transform: uppercase
+    color: $col-article-title
+  &__tags
+    margin-bottom: 20px
+  &__tag
+    text-transform: uppercase
+    font-size: 10px
+    color: $col-article-tag
+    font-family: $font-pt-sans-bold
+    &:hover
+      color: lighten($col-article-tag, 30%)
+    &:before
+      content: '•'
+      margin-right: 2px
+  &__text
+    font-size: 13px
+    font-family: $font-pt-sans-reg
+    color: $col-article-text
+  &__read_more
+    color: $col-article-read
+    text-transform: uppercase
+    font-size: 13px
+    font-family: $font-pt-sans-bold
+    margin-top: 20px
+    display: inline-block
+    padding-right: 20px
+    background-image: url('../img/articles/article_arrow.svg')
+    background-repeat: no-repeat
+    background-position: right center
+    background-size: 9px 8px
+    &:hover
+      text-decoration: underline
+
 /*===== chose_city =====*/
 
 .chose_city
@@ -124,6 +193,7 @@ a
     font-size: 26px
     font-family: $font-roboto-bold
     color: $col-chose-city-title
+    padding: 75px 0 30px 0
   &__btn
     background-color: $col-chose-city-btn
     display: inline-block
@@ -139,3 +209,7 @@ a
     position: absolute
     width: 100%
     height: 100%
+    top: 0
+    left: 0
+    z-index: -999
+

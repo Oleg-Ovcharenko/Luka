@@ -42,15 +42,65 @@
   <section class="news border_top">
     <div class="container">
       <h2 class="title_section news__title">Новости и события</h2>
+      <nav class="news_menu">
+        <a class="news_menu__item news_menu__item--active" href="#">все</a>
+        <a class="news_menu__item" href="#">вебинары</a>
+        <a class="news_menu__item" href="#">новые продукты</a>
+        <a class="news_menu__item" href="#">выставки</a>
+        <a class="news_menu__item" href="#">конференции</a>
+      </nav>
+      <div class="news_articles">
+        <article class="news_articles__article">
+          <img class="news_articles__img" src="img/articles/1.jpg" alt="1">
+          <div class="news_articles__content">
+            <h3 class="news_articles__title">lorem ipsum dolor sit amet</h3>
+            <p class="news_articles__tags">
+              <a class="news_articles__tag" href="#">Вебинары</a>
+              <a class="news_articles__tag" href="#">Выставки</a>
+            </p>
+            <p class="news_articles__text">Cras eu finibus velit, et volutpat risus. 
+            Quisque nec eros id velit rhoncus consectetur. Morbi accumsan aliquet 
+            porttitor. Duis feugiat ligula ex, et porta massa condimentum...</p>
+            <a class="news_articles__read_more" href="#">Подробнее</a>
+          </div>
+        </article>
+        <article class="news_articles__article">
+          <img class="news_articles__img" src="img/articles/2.jpg" alt="1">
+          <div class="news_articles__content">
+            <h3 class="news_articles__title">lorem ipsum dolor sit amet</h3>
+            <p class="news_articles__tags">
+              <a class="news_articles__tag" href="#">Вебинары</a>
+              <a class="news_articles__tag" href="#">Выставки</a>
+            </p>
+            <p class="news_articles__text">Cras eu finibus velit, et volutpat risus. 
+            Quisque nec eros id velit rhoncus consectetur. Morbi accumsan aliquet 
+            porttitor. Duis feugiat ligula ex, et porta massa condimentum...</p>
+            <a class="news_articles__read_more" href="#">Подробнее</a>
+          </div>
+        </article>
+        <article class="news_articles__article">
+          <img class="news_articles__img" src="img/articles/1.jpg" alt="1">
+          <div class="news_articles__content">
+            <h3 class="news_articles__title">lorem ipsum dolor sit amet</h3>
+            <p class="news_articles__tags">
+              <a class="news_articles__tag" href="#">Вебинары</a>
+              <a class="news_articles__tag" href="#">Выставки</a>
+            </p>
+            <p class="news_articles__text">Cras eu finibus velit, et volutpat risus. 
+            Quisque nec eros id velit rhoncus consectetur. Morbi accumsan aliquet 
+            porttitor. Duis feugiat ligula ex, et porta massa condimentum...</p>
+            <a class="news_articles__read_more" href="#">Подробнее</a>
+          </div>
+        </article>
+      </div>
     </div>
   </section>
   <section class="chose_city">
     <h1 class="chose_city__title">Наши дилеры находиться в 14 областях украины</h1>
     <a class="chose_city__btn" href="#">выбрать город</a>
-    <div class="chose_city__map">
-
-    </div>
+    <div class="chose_city__map" id="map"></div>
   </section>
-  <script type="text/javascript" src="../app/js/main.js"></script>
+  <script type="text/javascript" src="../app/js/main.js"></script> 
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZVxlIScHCd7cDbAbEDcEvUZZUc5P8xsM&signed_in=true&callback=initMap" async defer></script>
 </body>
 </html>

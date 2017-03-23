@@ -1,3 +1,4 @@
+@charset 'UTF-8';
 @font-face
 {
     font-family: PTSansCaptionBold;
@@ -248,6 +249,130 @@ a
     padding-top: 84px;
 }
 
+.news_menu
+{
+    font-family: PTSansCaptionRegular, Arial, sans-serif;
+
+    margin: 42px 0 37px 0; 
+
+    text-align: center;
+}
+.news_menu__item
+{
+    font-size: 13px;
+
+    margin-right: 40px; 
+
+    text-transform: uppercase;
+
+    color: #767676;
+}
+.news_menu__item:last-child
+{
+    margin-right: 0;
+}
+.news_menu__item:hover
+{
+    color: #8cb623;
+}
+.news_menu__item--active
+{
+    color: #8cb623;
+}
+
+.news_articles
+{
+    display: flex;
+
+    margin-bottom: 119px; 
+
+    justify-content: space-between;
+}
+.news_articles__article
+{
+    width: 350px;
+    padding-bottom: 23px;
+
+    transition: .3s; 
+    text-align: center;
+}
+.news_articles__article:hover
+{
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .15);
+}
+.news_articles__content
+{
+    padding: 0 10px;
+}
+.news_articles__img
+{
+    width: 100%;
+    height: 210px;
+}
+.news_articles__title
+{
+    font-family: PTSansCaptionBold, Arial, sans-serif;
+    font-size: 15px;
+
+    padding: 13px 0 18px 0;
+
+    text-transform: uppercase;
+
+    color: #4d4c4c;
+}
+.news_articles__tags
+{
+    margin-bottom: 20px;
+}
+.news_articles__tag
+{
+    font-family: PTSansCaptionBold, Arial, sans-serif; 
+    font-size: 10px;
+
+    text-transform: uppercase;
+
+    color: #4d4c4c;
+}
+.news_articles__tag:hover
+{
+    color: #9a9898;
+}
+.news_articles__tag:before
+{
+    margin-right: 2px; 
+
+    content: '•';
+}
+.news_articles__text
+{
+    font-family: PTSansCaptionRegular, Arial, sans-serif;
+    font-size: 13px;
+
+    color: #8f8f8f;
+}
+.news_articles__read_more
+{
+    font-family: PTSansCaptionBold, Arial, sans-serif;
+    font-size: 13px;
+
+    display: inline-block;
+
+    margin-top: 20px;
+    padding-right: 20px;
+
+    text-transform: uppercase;
+
+    color: #04a2e8;
+    background-image: url('../img/articles/article_arrow.svg');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 9px 8px;
+}
+.news_articles__read_more:hover
+{
+    text-decoration: underline;
+}
+
 /*===== chose_city =====*/
 .chose_city
 {
@@ -261,6 +386,8 @@ a
 {
     font-family: RobotoBold, Arial, sans-serif;
     font-size: 26px;
+
+    padding: 75px 0 30px 0; 
 
     text-transform: uppercase;
 
@@ -287,6 +414,9 @@ a
 .chose_city__map
 {
     position: absolute;
+    z-index: -999; 
+    top: 0;
+    left: 0;
 
     width: 100%;
     height: 100%;
