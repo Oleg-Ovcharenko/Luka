@@ -132,12 +132,14 @@ a
 .news_articles
   display: flex
   justify-content: space-between
+  flex-wrap: wrap
   margin-bottom: 119px
   &__article
     width: 350px
     text-align: center
     padding-bottom: 23px
     transition: .3s
+    margin: 0 auto
     &:hover
       box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.15)
   &__content
@@ -213,3 +215,80 @@ a
     left: 0
     z-index: -999
 
+/*===== statistic =====*/
+
+.statistic
+  height: 305px
+  width: 100%
+  background-image: url('../img/info_bg_blur.jpg')
+  background-repeat: no-repeat
+  background-size: cover cover
+  background-attachment: fixed 
+  &__dark
+    background-color: rgba(0,0,0,.7)
+    height: 100%
+    width: 100%
+  &__container
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+  &__criterion
+    width: 225px
+    margin-top: 70px
+    margin: 0 auto
+  &__title
+    font-size: 45px
+    font-family: $font-pt-sans-bold
+    padding-left: 65px
+    display: inline-block
+    position: relative
+  &__title--green
+    color: $col-statistic-title-green
+    &:before
+      content: ''
+      display: inline-block
+      width: 32px
+      height: 4px
+      background-image: url('../img/statistic/blue_line.svg')
+      position: absolute
+      left: 0
+      top: 77px
+  &__title--blue
+    color: $col-statistic-title-blue
+    &:before
+      content: ''
+      display: inline-block
+      width: 32px
+      height: 4px
+      background-image: url('../img/statistic/green_line.svg')
+      position: absolute
+      left: 0
+      top: 77px
+  &__text
+    color: $col-statistic-text
+    text-transform: uppercase
+    margin-top: 55px
+    font-size: 16px
+    font-family: $font-pt-sans-bold
+  &__title--years
+    background-image: url('../img/statistic/years.svg')
+    background-repeat: no-repeat
+    background-position: 0 center
+  &__title--ready
+    background-image: url('../img/statistic/ready.svg')
+    background-repeat: no-repeat
+    background-position: 0 center
+  &__title--region
+    background-image: url('../img/statistic/region.svg')
+    background-repeat: no-repeat
+    background-position: 0 center
+  &__title--grow
+    background-image: url('../img/statistic/grow.svg')
+    background-repeat: no-repeat
+    background-position: 0 center
+
+/*===== advantages =====*/
+
+.advantages
+  &__title
+    padding-top: 80px

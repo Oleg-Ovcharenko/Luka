@@ -287,13 +287,15 @@ a
     margin-bottom: 119px; 
 
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .news_articles__article
 {
     width: 350px;
+    margin: 0 auto; 
     padding-bottom: 23px;
 
-    transition: .3s; 
+    transition: .3s;
     text-align: center;
 }
 .news_articles__article:hover
@@ -420,4 +422,126 @@ a
 
     width: 100%;
     height: 100%;
+}
+
+/*===== statistic =====*/
+.statistic
+{
+    width: 100%;
+    height: 305px;
+
+    background-image: url('../img/info_bg_blur.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover cover;
+}
+.statistic__dark
+{
+    width: 100%; 
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, .7);
+}
+.statistic__container
+{
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.statistic__criterion
+{
+    width: 225px;
+    margin: 0 auto; 
+    margin-top: 70px;
+}
+.statistic__title
+{
+    font-family: PTSansCaptionBold, Arial, sans-serif;
+    font-size: 45px;
+
+    position: relative; 
+
+    display: inline-block;
+
+    padding-left: 65px;
+}
+.statistic__title--green
+{
+    color: #afd63d;
+}
+.statistic__title--green:before
+{
+    position: absolute;
+    top: 77px; 
+    left: 0;
+
+    display: inline-block;
+
+    width: 32px;
+    height: 4px;
+
+    content: '';
+
+    background-image: url('../img/statistic/blue_line.svg');
+}
+.statistic__title--blue
+{
+    color: #60c7f5;
+}
+.statistic__title--blue:before
+{
+    position: absolute;
+    top: 77px; 
+    left: 0;
+
+    display: inline-block;
+
+    width: 32px;
+    height: 4px;
+
+    content: '';
+
+    background-image: url('../img/statistic/green_line.svg');
+}
+.statistic__text
+{
+    font-family: PTSansCaptionBold, Arial, sans-serif; 
+    font-size: 16px;
+
+    margin-top: 55px;
+
+    text-transform: uppercase;
+
+    color: #fff;
+}
+.statistic__title--years
+{
+    background-image: url('../img/statistic/years.svg');
+    background-repeat: no-repeat;
+    background-position: 0 center;
+}
+.statistic__title--ready
+{
+    background-image: url('../img/statistic/ready.svg');
+    background-repeat: no-repeat;
+    background-position: 0 center;
+}
+.statistic__title--region
+{
+    background-image: url('../img/statistic/region.svg');
+    background-repeat: no-repeat;
+    background-position: 0 center;
+}
+.statistic__title--grow
+{
+    background-image: url('../img/statistic/grow.svg');
+    background-repeat: no-repeat;
+    background-position: 0 center;
+}
+
+/*===== advantages =====*/
+.advantages__title
+{
+    padding-top: 80px;
 }
