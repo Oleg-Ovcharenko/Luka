@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Luka Novak</title>
+  <link rel="stylesheet" type="text/css" href="libs/flexslider/flexslider.css">
   <link rel="stylesheet" type="text/css" href="css/style.min.css">
 </head>
 <body>
@@ -119,14 +120,131 @@
   </section>
   <section class="advantages border_top">
     <h2 class="title_section advantages__title">Наши приемущества</h2>
-
+    <div class="advantages__tiles">
+      <div class="advantages__container container">
+        <div class="advantages__tiles_line">
+          <div class="advantage">
+            <div class="rhombus rhombus_colors"></div>
+            <p class="advantage__text">Полное наличие цветов палитры </br> из нашего каталога </p>
+          </div>
+          <div class="advantage">
+            <div class="circle circle_instruments"></div>
+            <p class="advantage__text">Инструменты для работы, </br>различные каталоги, </br> программа для построения</p>
+          </div>
+          <div class="advantage">
+            <div class="rhombus rhombus_develop"></div>
+            <p class="advantage__text">Мы разработали для наших </br>дилеров различные виды дизайна </br> визиток, объявлений, флаеров</p>
+          </div>
+          <div class="advantage">
+            <div class="circle circle_network"></div>
+            <p class="advantage__text">Наш клиен самая большая сеть </br> натяжных потолков в Украине </br> Гарпун</p>
+          </div>
+        </div>
+        <div class="advantages__tiles_line advantages__tiles_line_2">
+          <div class="advantage">
+            <div class="circle circle_189"></div>
+            <p class="advantage__text">18 цветной вставки </br> и 9 видов белой</p>
+          </div>
+          <div class="advantage">
+            <div class="rhombus rhombus_quality"></div>
+            <p class="advantage__text">У нас полноценный отдел качества </br> продукции и всех материалов </br> которых мы предоставляем нашим </br> клиентам</p>
+          </div>
+          <div class="advantage">
+            <div class="circle circle_recycling"></div>
+            <p class="advantage__text">В случае несоотвествия полотна </br> требованиям устанжовки, мы </br> переделываем его без выяснения </br> причин, чтобы Вы и Ваши клиенты </br> быстро вышли из этой ситуации</p>
+          </div>
+          <div class="advantage">
+            <div class="rhombus rhombus_make"></div>
+            <p class="advantage__text">Ваш заказ оформленный до 15 00 </br> изготавливается в тот же день.</p>
+          </div>
+        </div>
+      </div>
+   </div>
+  </section>
+  <section class="reviews border_top">
+    <div class="container">
+      <h2 class="title_section advantages__title">Отзывы</h2>
+      <div class="slider reviews__slider">
+        <div class="tabs reviews__slides">
+          <div class="tab reviews__slide">sdf</div>
+          <div class="tab reviews__slide">sdfsdf</div>
+          <div class="tab reviews__slide">sdfddddd</div>
+        </div>
+      </div>
+    </div>
   </section>
   <section class="chose_city">
     <h1 class="chose_city__title">Наши дилеры находиться в 14 областях украины</h1>
     <a class="chose_city__btn" href="#">выбрать город</a>
     <div class="chose_city__map" id="map"></div>
   </section>
-  <script type="text/javascript" src="../app/js/main.js"></script> 
+  <footer class="footer border_top">
+    <div class="container footer_container">
+      <div class="footer_container__menu">
+        <nav class="footer__menu contact_menu">
+          <a class="contact_menu__item" href="#">Главная</a><br>
+          <a class="contact_menu__item" href="#">Продукция</a><br>
+          <a class="contact_menu__item" href="#">Для лидеров</a><br>
+          <a class="contact_menu__item" href="#">Cервис</a><br>
+          <a class="contact_menu__item" href="#">Aкции</a><br>
+          <a class="contact_menu__item" href="#">Новости и события</a><br>
+          <a class="contact_menu__item" href="#">Доставка</a><br>
+          <a class="contact_menu__item" href="#">O нас</a><br>
+          <a class="contact_menu__item" href="#">Контакты</a><br>
+        </nav>
+        <nav class="footer__menu contact_menu">
+          <a class="contact_menu__item" href="#">Главная</a><br>
+          <a class="contact_menu__item" href="#">Продукция</a><br>
+          <a class="contact_menu__item" href="#">Для лидеров</a><br>
+          <a class="contact_menu__item" href="#">Cервис</a><br>
+          <a class="contact_menu__item" href="#">Aкции</a><br>
+          <a class="contact_menu__item" href="#">Новости и события</a><br>
+          <a class="contact_menu__item" href="#">Доставка</a><br>
+          <a class="contact_menu__item" href="#">O нас</a><br>
+          <a class="contact_menu__item" href="#">Контакты</a><br>
+        </nav>
+        <div class="clearfix"></div>
+        <div class="contact_social">
+          <a class="contact_social__item contact_social__item_fb" href="#"></a>
+          <a class="contact_social__item contact_social__item_in" href="#"></a>
+          <a class="contact_social__item contact_social__item_tw" href="#"></a>
+          <a class="contact_social__item contact_social__item_go" href="#"></a>
+          <a class="contact_social__item contact_social__item_yo" href="#"></a>
+        </div>
+      </div>
+      <div class="contact_form footer__form">
+        <form action="#">
+          <h5 class="contact_form__header">Хватит заниматься ХЕРНЕЙ </br> работайте с нами!</h5>
+          <input class="contact_form__name" type="text" placeholder="Ваше имя"><br>
+          <input class="contact_form__phone" type="tel" placeholder="Ваш телефон"><br>
+          <a class="contact_form__more_inf" href="#">Дополнительная информация</a><br>
+          <input class="contact_form__button" value="отправить заявку" type="submit">
+        </form>
+      </div>
+      <div class="footer__contacts">
+        <div class="contacts_phones">
+          <div class="contacts_phones__img contacts_circle"></div>
+          <ol class="contacts_phones__list">
+            <li class="contacts_phones__item">+38 (067) 534 12 50</li>
+            <li class="contacts_phones__item">+38 (067) 534 12 50</li>
+            <li class="contacts_phones__item">+38 (067) 534 12 50</li>
+          </ol>
+        </div>
+        <div class="contacts_where">
+          <div class="contacts_where__img contacts_circle"></div>
+          <p class="contacts_where__item">Украина, г.Львов </br> ул. Городоцька 8, оф.31</p>
+        </div>
+        <div class="contacts_mail">
+          <div class="contacts_mail__img contacts_circle"></div><br>
+          <a class="contacts_mail__item" href="mailto:office@mexll.com.ua">office@nexl.com.ua</a>
+        </div>
+      </div>
+    </div>
+    <p class="footer__copiright">&copy; 2011-2016. Все права защищены.</p>
+  </footer>
+  <script charset="utf-8" type="text/javascript" src="libs/jquery/dist/jquery.js"></script>
+  <script charset="utf-8" type="text/javasctipt" src="libs/flexslider/jquery.flexslider.js"></script>
+  <script charset="utf-8" type="text/javascript" src="js/script.min.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZVxlIScHCd7cDbAbEDcEvUZZUc5P8xsM&signed_in=true&callback=initMap" async defer></script>
 </body>
 </html>

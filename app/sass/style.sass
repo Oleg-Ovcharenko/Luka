@@ -218,7 +218,7 @@ a
 /*===== statistic =====*/
 
 .statistic
-  height: 305px
+  min-height: 305px
   width: 100%
   background-image: url('../img/info_bg_blur.jpg')
   background-repeat: no-repeat
@@ -226,7 +226,7 @@ a
   background-attachment: fixed 
   &__dark
     background-color: rgba(0,0,0,.7)
-    height: 100%
+    min-height: 305px
     width: 100%
   &__container
     display: flex
@@ -292,3 +292,256 @@ a
 .advantages
   &__title
     padding-top: 80px
+  &__tiles
+    height: 466px
+    width: 100%
+    background-image: url('../img/advantages_bg.png')
+    background-position: center center
+    margin-top: 94px
+  &__container
+    position: relative
+  &__tiles_line
+    display: flex
+    width: 100%
+    justify-content: space-between
+    top: -45px
+    position: absolute
+  &__tiles_line_2
+    position: absolute
+    width: 100%
+    top: 187px
+
+.advantage
+  width: 256px
+  position: relative
+  z-index: 9999
+  &__text
+    text-align: center
+    font-size: 13px
+    color: $col-advantage-text
+    font-family: $font-pt-sans-reg
+
+.rhombus
+  width: 66px
+  height: 66px
+  margin: 13px auto 40px auto
+  &:after
+    content: ''
+    position: relative
+    display: block
+    width: 66px
+    height: 66px
+    background-color: $col-advantage-rhombus
+    border-radius: 5px
+    transform: rotate(-45deg)
+    margin: 0 auto
+    z-index: -999
+  &_colors
+    background-image: url('../img/advantages/colors.svg')
+    background-repeat: no-repeat
+    background-position: center center
+  &_develop
+    background-image: url('../img/advantages/develop.svg')
+    background-repeat: no-repeat
+    background-position: center center
+  &_quality
+    background-image: url('../img/advantages/quality.svg')
+    background-repeat: no-repeat
+    background-position: center center
+  &_make
+    background-image: url('../img/advantages/make.svg')
+    background-repeat: no-repeat
+    background-position: center center
+
+.circle
+  width: 84px
+  height: 84px
+  border-radius: 42px
+  background-color: $col-advantage-circle
+  margin: 0 auto 35px auto
+  &_instruments
+    background-image: url('../img/advantages/instruments.svg')
+    background-repeat: no-repeat
+    background-position: center center
+  &_network
+    background-image: url('../img/advantages/network.svg')
+    background-repeat: no-repeat
+    background-position: 32px center
+  &_189
+    background-image: url('../img/advantages/189.svg')
+    background-repeat: no-repeat
+    background-position: center center
+  &_recycling
+    background-image: url('../img/advantages/recycling.svg')
+    background-repeat: no-repeat
+    background-position: center center
+
+/*===== reviews =====*/
+.reviews
+
+
+/*===== footer =====*/
+
+.footer
+  background-color: $col-footer-bg
+  position: relative
+  &__contacts
+    margin: 40px 65px 0 0
+  &__copiright
+    padding: 10px 0 30px 0
+    text-align: center
+    font-size: 13px
+    font-family: $font-pt-sans-reg
+    color: $col-footer-menu-item
+  &_container
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+.contact_menu
+  float: left
+  margin: 35px 45px 0 0
+  &__item
+    font-family: $font-pt-sans-reg
+    font-size: 13px
+    color: $col-footer-menu-item
+    line-height: 30px
+    &:hover
+      color: $col-footer-menu-item-hover
+
+.contact_social
+  width: 100%
+  text-align: center
+  margin-top: 55px
+  &__item
+    display: inline-block
+    width: 35px
+    height: 35px
+    border-radius: 18px
+    background-color: $col-footer-soc-bg
+    margin-right: 5px
+    background-position: center center
+    background-repeat: no-repeat
+    &:last-child
+      margin-right: 0
+    &:hover
+      background-color: $col-footer-soc-hover
+  &__item_fb
+    background-image: url('../img/footer/soc/facebook.svg')
+  &__item_in
+    background-image: url('../img/footer/soc/linkedin.svg')
+  &__item_tw
+    background-image: url('../img/footer/soc/twitter.svg')
+  &__item_go
+    background-image: url('../img/footer/soc/google.svg')
+  &__item_yo
+    background-image: url('../img/footer/soc/youtube.svg')
+
+.contact_form
+  width: 411px
+  background-color: $col-footer-form-bg
+  text-align: center
+  padding: 40px 30px 50px 30px
+  position: relative
+  top: -25px
+  &__header
+    font-size: 18px
+    color: $col-footer-form-header
+    font-family: $font-pt-sans-bold
+  &__name
+    margin: 35px 0 20px 0
+    background-image: url('../img/footer/form_name.svg')
+    background-repeat: no-repeat
+    background-position: 387px center
+  &__phone
+    background-image: url('../img/footer/form_phone.svg')
+    background-repeat: no-repeat
+    background-position: 387px center
+  &__name, &__phone
+    width: 100%
+    box-sizing: border-box
+    border: 1px solid $col-footer-form-border
+    background-color: $col-footer-form-input-bg
+    transition: .3s
+    height: 40px
+    font-size: 13px
+    font-family: $font-pt-sans-reg
+    padding: 0 35px 0 10px
+    &:focus
+      outline: none
+      border: 1px solid $col-footer-form-border-active
+  &__more_inf
+    color: $col-footer-form-more-inf
+    font-family: $font-pt-sans-reg
+    font-size: 13px
+    text-decoration: underline
+    margin: 45px 0 25px 0
+    display: inline-block
+    &:hover
+      color: lighten($col-footer-form-more-inf, 10%)
+  &__button
+    color: $col-footer-form-button
+    background-color: $col-footer-form-button-bg
+    border: 2px solid $col-footer-form-button
+    line-height: 50px
+    box-sizing: border-box
+    text-transform: uppercase
+    font-family: $font-pt-sans-bold
+    font-size: 14px
+    padding: 0 30px
+    text-align: center
+    transition: .3s
+    border-radius: 2px
+    &:hover
+      color: lighten($col-footer-form-button, 20%)
+      border: 2px solid lighten($col-footer-form-button, 20%)
+      cursor: pointer
+
+.contacts_phones
+  width: 220px
+  text-align: center
+  &__list
+    margin-top: 15px
+  &__item
+    list-style: none
+    font-size: 14px
+    font-family: $font-pt-sans-bold
+    color: $col-footer-cont-font
+    margin-top: 5px
+  &__img
+    background-image: url('../img/footer/phone.svg')
+
+.contacts_where
+  text-align: center
+  margin-top: 20px
+  &__img
+    background-image: url('../img/footer/geo.svg')
+  &__item
+    color: $col-footer-cont-font
+    line-height: 27px
+    margin-top: 10px
+    font-size: 13px
+    font-family: $font-tnr
+
+.contacts_mail
+  text-align: center
+  margin-top: 20px
+  &__img
+    background-image: url('../img/footer/mail.svg')
+  &__item
+    color: $col-footer-cont-font
+    font-family: $font-tnr
+    font-size: 13px
+    margin-top: 10px
+    display: inline-block
+    &:hover
+      text-decoration: underline
+
+.contacts_circle
+  width: 37px
+  height: 37px
+  background-color: $col-footer-cont-img-bg
+  background-repeat: no-repeat
+  background-position: center center
+  border-radius: 19px
+  display: inline-block

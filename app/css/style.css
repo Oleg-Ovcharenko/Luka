@@ -428,7 +428,7 @@ a
 .statistic
 {
     width: 100%;
-    height: 305px;
+    min-height: 305px;
 
     background-image: url('../img/info_bg_blur.jpg');
     background-repeat: no-repeat;
@@ -438,7 +438,7 @@ a
 .statistic__dark
 {
     width: 100%; 
-    height: 100%;
+    min-height: 305px;
 
     background-color: rgba(0, 0, 0, .7);
 }
@@ -544,4 +544,421 @@ a
 .advantages__title
 {
     padding-top: 80px;
+}
+
+.advantages__tiles
+{
+    width: 100%;
+    height: 466px;
+    margin-top: 94px; 
+
+    background-image: url('../img/advantages_bg.png');
+    background-position: center center;
+}
+
+.advantages__container
+{
+    position: relative;
+}
+
+.advantages__tiles_line
+{
+    position: absolute; 
+    top: -45px;
+
+    display: flex;
+
+    width: 100%;
+
+    justify-content: space-between;
+}
+
+.advantages__tiles_line_2
+{
+    position: absolute;
+    top: 187px; 
+
+    width: 100%;
+}
+
+.advantage
+{
+    position: relative;
+    z-index: 9999; 
+
+    width: 256px;
+}
+.advantage__text
+{
+    font-family: PTSansCaptionRegular, Arial, sans-serif; 
+    font-size: 13px;
+
+    text-align: center;
+
+    color: #8f8f8f;
+}
+
+.rhombus
+{
+    width: 66px;
+    height: 66px;
+    margin: 13px auto 40px auto;
+}
+.rhombus:after
+{
+    position: relative;
+    z-index: -999; 
+
+    display: block;
+
+    width: 66px;
+    height: 66px;
+    margin: 0 auto;
+
+    content: '';
+    transform: rotate(-45deg);
+
+    border-radius: 5px;
+    background-color: #009ade;
+}
+.rhombus_colors
+{
+    background-image: url('../img/advantages/colors.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.rhombus_develop
+{
+    background-image: url('../img/advantages/develop.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.rhombus_quality
+{
+    background-image: url('../img/advantages/quality.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.rhombus_make
+{
+    background-image: url('../img/advantages/make.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.circle
+{
+    width: 84px;
+    height: 84px;
+    margin: 0 auto 35px auto; 
+
+    border-radius: 42px;
+    background-color: #8cb623;
+}
+.circle_instruments
+{
+    background-image: url('../img/advantages/instruments.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.circle_network
+{
+    background-image: url('../img/advantages/network.svg');
+    background-repeat: no-repeat;
+    background-position: 32px center;
+}
+.circle_189
+{
+    background-image: url('../img/advantages/189.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.circle_recycling
+{
+    background-image: url('../img/advantages/recycling.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/*===== reviews =====*/
+/*===== footer =====*/
+.footer
+{
+    position: relative; 
+
+    background-color: #404040;
+}
+.footer__contacts
+{
+    margin: 40px 65px 0 0;
+}
+.footer__copiright
+{
+    font-family: PTSansCaptionRegular, Arial, sans-serif;
+    font-size: 13px;
+
+    padding: 10px 0 30px 0;
+
+    text-align: center;
+
+    color: #e1e1e1;
+}
+.footer_container
+{
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact_menu
+{
+    float: left;
+
+    margin: 35px 45px 0 0;
+}
+.contact_menu__item
+{
+    font-family: PTSansCaptionRegular, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 30px; 
+
+    color: #e1e1e1;
+}
+.contact_menu__item:hover
+{
+    color: #009ade;
+}
+
+.contact_social
+{
+    width: 100%;
+    margin-top: 55px; 
+
+    text-align: center;
+}
+.contact_social__item
+{
+    display: inline-block;
+
+    width: 35px;
+    height: 35px;
+    margin-right: 5px;
+
+    border-radius: 18px;
+    background-color: #636363;
+    background-repeat: no-repeat; 
+    background-position: center center;
+}
+.contact_social__item:last-child
+{
+    margin-right: 0;
+}
+.contact_social__item:hover
+{
+    background-color: #04a2e8;
+}
+.contact_social__item_fb
+{
+    background-image: url('../img/footer/soc/facebook.svg');
+}
+.contact_social__item_in
+{
+    background-image: url('../img/footer/soc/linkedin.svg');
+}
+.contact_social__item_tw
+{
+    background-image: url('../img/footer/soc/twitter.svg');
+}
+.contact_social__item_go
+{
+    background-image: url('../img/footer/soc/google.svg');
+}
+.contact_social__item_yo
+{
+    background-image: url('../img/footer/soc/youtube.svg');
+}
+
+.contact_form
+{
+    position: relative;
+    top: -25px; 
+
+    width: 411px;
+    padding: 40px 30px 50px 30px;
+
+    text-align: center;
+
+    background-color: #fff;
+}
+.contact_form__header
+{
+    font-family: PTSansCaptionBold, Arial, sans-serif; 
+    font-size: 18px;
+
+    color: #404040;
+}
+.contact_form__name
+{
+    margin: 35px 0 20px 0;
+
+    background-image: url('../img/footer/form_name.svg');
+    background-repeat: no-repeat;
+    background-position: 387px center;
+}
+.contact_form__phone
+{
+    background-image: url('../img/footer/form_phone.svg');
+    background-repeat: no-repeat;
+    background-position: 387px center;
+}
+.contact_form__name,
+.contact_form__phone
+{
+    font-family: PTSansCaptionRegular, Arial, sans-serif;
+    font-size: 13px;
+
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    padding: 0 35px 0 10px; 
+
+    transition: .3s;
+
+    border: 1px solid #f6f6f6;
+    background-color: #fdfdfd;
+}
+.contact_form__name:focus,
+.contact_form__phone:focus
+{
+    border: 1px solid #04a2e8; 
+    outline: none;
+}
+.contact_form__more_inf
+{
+    font-family: PTSansCaptionRegular, Arial, sans-serif;
+    font-size: 13px;
+
+    display: inline-block; 
+
+    margin: 45px 0 25px 0;
+
+    text-decoration: underline;
+
+    color: #666;
+}
+.contact_form__more_inf:hover
+{
+    color: gray;
+}
+.contact_form__button
+{
+    font-family: PTSansCaptionBold, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 50px;
+
+    box-sizing: border-box;
+    padding: 0 30px;
+
+    transition: .3s;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #009ade;
+    border: 2px solid #009ade;
+    border-radius: 2px; 
+    background-color: #fff;
+}
+.contact_form__button:hover
+{
+    cursor: pointer; 
+
+    color: #45c6ff;
+    border: 2px solid #45c6ff;
+}
+
+.contacts_phones
+{
+    width: 220px;
+
+    text-align: center;
+}
+.contacts_phones__list
+{
+    margin-top: 15px;
+}
+.contacts_phones__item
+{
+    font-family: PTSansCaptionBold, Arial, sans-serif;
+    font-size: 14px;
+
+    margin-top: 5px; 
+
+    list-style: none;
+
+    color: #e1e1e1;
+}
+.contacts_phones__img
+{
+    background-image: url('../img/footer/phone.svg');
+}
+
+.contacts_where
+{
+    margin-top: 20px; 
+
+    text-align: center;
+}
+.contacts_where__img
+{
+    background-image: url('../img/footer/geo.svg');
+}
+.contacts_where__item
+{
+    font-family: TimesNewRomanRegular, Times, serif; 
+    font-size: 13px;
+    line-height: 27px;
+
+    margin-top: 10px;
+
+    color: #e1e1e1;
+}
+
+.contacts_mail
+{
+    margin-top: 20px; 
+
+    text-align: center;
+}
+.contacts_mail__img
+{
+    background-image: url('../img/footer/mail.svg');
+}
+.contacts_mail__item
+{
+    font-family: TimesNewRomanRegular, Times, serif;
+    font-size: 13px;
+
+    display: inline-block; 
+
+    margin-top: 10px;
+
+    color: #e1e1e1;
+}
+.contacts_mail__item:hover
+{
+    text-decoration: underline;
+}
+
+.contacts_circle
+{
+    display: inline-block; 
+
+    width: 37px;
+    height: 37px;
+
+    border-radius: 19px;
+    background-color: #04a2e8;
+    background-repeat: no-repeat;
+    background-position: center center;
 }

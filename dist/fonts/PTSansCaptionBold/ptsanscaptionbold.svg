@@ -2,14 +2,14 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
 <metadata>
-Created by FontForge 20160405 at Wed Mar 22 10:59:01 2017
+Created by FontForge 20161003 at Mon Mar 27 16:26:53 2017
  By www-data
 Copyright (c) 2009 ParaType Ltd. All rights reserved.
 </metadata>
 <defs>
-<font id="PTSans-CaptionBold" horiz-adv-x="591" >
+<font id="originalptsanscaptionbold" horiz-adv-x="591" >
   <font-face 
-    font-family="PT Sans Caption"
+    font-family="originalptsanscaptionbold"
     font-weight="700"
     font-variant="small-caps"
     font-stretch="normal"
@@ -21,7 +21,7 @@ Copyright (c) 2009 ParaType Ltd. All rights reserved.
     cap-height="700"
     bbox="-373 -276 1287 1019"
     underline-thickness="50"
-    underline-position="-150"
+    underline-position="-200"
     unicode-range="U+0020-FB02"
   />
 <missing-glyph horiz-adv-x="750" 
